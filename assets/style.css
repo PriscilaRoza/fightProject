@@ -1,6 +1,17 @@
+body {
+    background-image: url('https://img.freepik.com/premium-vector/dungeon-with-long-corridor-medieval-castle-corridor-with-torches-doors-with-bars-interior_273525-1096.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    width: 80%;
+    margin: 200px auto;
+    
+}
 .fightArea{
     display: flex;
     gap: 20px;
+    text-align: center;
 
 }
 
@@ -9,10 +20,17 @@
     flex: 1;
 }
 
+strong{
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 5px;
+}
+
 .lifeBar {
-    height: 10px;
-    border: 1px solid #333;
-    border-radius: 5px;
+    height: 15px;
+    border: 3px solid #333;
+    border-radius: 10px;
+    background-color: #fff;
 }
 
 .lifeBar .bar {
@@ -20,9 +38,62 @@
     background-color: red;
     border-radius: 5px;
 }
+.attackButton{
+    width: 200px;
+    height: 30px;
+    margin-top: 20px;
+    font-size: 1.1rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: orange;
+    border-radius: 20px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+
+}
+.attackButton:hover {
+    background-color: red;
+    transition: 1000;
+}
+
 
 .log{
     border: 1px dotted #999;
     height: 200px;
     overflow-y: scroll;
+    background-color: #333333a5;
+    color: rgb(128, 245, 128);
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-family:'Courier New', Courier, monospace;
+    
+}
+.log ul{
+    animation:
+            typing 1s steps(20, end) forwards,
+            blink .8s infinite;
+}
+@keyframes type {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes type2 {
+    0% {
+        width: 0;
+    }
+
+    50% {
+        width: 0;
+    }
+
+    100% {
+        width: 100;
+    }
+}
+
+@keyframes blink {
+    to {
+        opacity: .0;
+    }
 }
