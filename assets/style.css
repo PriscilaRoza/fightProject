@@ -1,6 +1,7 @@
 .fightArea{
     display: flex;
     gap: 20px;
+
 }
 
 #char, 
